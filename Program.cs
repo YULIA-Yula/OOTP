@@ -12,3 +12,12 @@ namespace C
         }
     }
 }
+public void Draw(Shape shape)
+{
+  if (shape != null) {
+     Console.WriteLine("Drawing " + shape.ToString());
+     Console.WriteLine("---");
+  } else {
+     throw new ArgumentNullException("shape");
+  }
+}
